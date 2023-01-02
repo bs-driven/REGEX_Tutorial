@@ -18,7 +18,7 @@ The intention of this particluar article is to display the use of regex for html
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
-/<(\w+)(\d*)>|</(.*) >/
+`/<(\w+)(\d*)>|</(.*) >/`
 
 Regex componets consist of single characters, wild card, bracket expressions, control characters, and escsape sets. Regex components can either be metacharacters(have a special meaning) or have regular charcters for there literal meaning. For example in regex "\d"(escape set) is a metacharacter which means any character between 0-9. While "."(wild card) stands for any single character except "\n"(a new line) at all but "\." is the literal period. Now for the above regex formula it is to search for any html tags using literal and metacharacteres. Being match the literal "<" with any letter character one or more with any digit 0-9 following it and ends with the literal ">" character. then the OR pipeline withe the literal "<" and a backslash accomapanied with any character 0 or more ending with a ">". 
 
@@ -32,9 +32,9 @@ Anchors are unigue characters used to define the beginning or the end of a strin
 There are serveral different quantifiers in regex which are represented with these characters: *, +, ?, and {}. The * is a quantifer representing 0 or more. While + is a quantifier the represents 1 or more. Now as for the ? is a quantifier that represents 0 or 1. Regex is inheritly greedy to search for and occurence the mininal amount of times ? will come in handy.
 
 ### Grouping Constructs
-/<(.*)>
+`<(.*)>`
 
-Grouping constructs are used within parentheses to capture subexpressions. To match the text in your code to particluar patteren asked for within the parentheses. You can also use it to search for a range a characters (a-z).
+Grouping constructs are used within parentheses to capture subexpressions. To match the text in your code to particluar patteren asked for within the parentheses. You can also use it to search for a range a characters (a-z)(0-9)(A-Z).
 
 ### Bracket Expressions
 
@@ -50,4 +50,4 @@ In regex there are escape sequences that can be used in order to match a certain
 
 ## Author
 
-I hope you were able to follow so far I know its alot in to get a grasp on. What I have intended for you to be ablemto pick up is a way to search with regex  in order to find html tags throughout your own code. A quick example I'll show here is different from my earlier regex example but it still searchs for html tags: <(.)>.?|<(.*) />. My name is Bradley I hope you were able learn a bit from me today about regex
+I hope you were able to follow so far I know its alot in to get a grasp on. What I have intended for you to be ablemto pick up is a way to search with regex  in order to find html tags throughout your own code. A quick example I'll show here is different from my earlier regex example but it still searchs for html tags: `<(.)>.?|<(.*) />`. My name is Bradley I hope you were able learn a bit from me today about regex
